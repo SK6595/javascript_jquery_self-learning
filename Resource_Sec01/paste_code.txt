@@ -1,0 +1,31 @@
+このスクリプトをSample02.htmlのheadタグ内 にコピーペーストします。
+
+<script>
+$(document).ready(function(){
+//この中に処理を記述 開始
+
+//bxsliderの表示設定
+$('.bxslider').bxSlider({
+mode: 'horizontal',
+speed: 1000,
+startSlide: 0,
+auto: false,
+autoControls: true,
+adaptiveHeight: true,
+captions: false
+});
+
+//プルダウンメニューのjQuery
+$(function(){
+                  $("#menu li").hover(function(){
+                        $("ul",this).show();
+                  },
+                  function(){
+                        $("ul",this).hide();
+                  });
+            });
+
+
+//この中に処理を記述 終了
+});
+</script>
